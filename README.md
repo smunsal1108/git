@@ -8,106 +8,107 @@ Este repositorio sirve como una guía rápida y un recordatorio de los comandos 
   ```bash
   git config --global user.name "Tu Nombre"
   git config --global user.email "tuemail@example.com"
-   ```
+  ```
 
 ## Crear y Clonar Repositorios
 
 - **Inicializar un Nuevo Repositorio**
-   ```bash
+  ```bash
   git init
-   ```
+  ```
 
 - **Clonar un Repositorio Existente**
   ```bash
-git clone [URL]
-   ```
+  git clone [URL]
+  ```
 
 ## Cambios en los Archivos
 
 - **Verificar el Estado del Repositorio**
   ```bash
-git status
-   ```
+  git status
+  ```
+
 - **Agregar Archivos al Área de Staging**
   ```bash
-git add [archivo]
-git add .
-
-   ```
+  git add [archivo]
+  git add .
+  ```
 
 - **Realizar un Commit de los Cambios**
   ```bash
-git commit -m "Mensaje del commit"
-   ```
+  git commit -m "Mensaje del commit"
+  ```
 
-
-  ## Trabajar con Ramas
+## Trabajar con Ramas
 
 - **Listar todas las Ramas**
   ```bash
-git branch -a
-   ```
+  git branch -a
+  ```
 
 - **Crear una Nueva Rama**
   ```bash
-git branch [nombre-rama]
-   ```
-  - **Cambiar a Otra Rama**
+  git branch [nombre-rama]
+  ```
+
+- **Cambiar a Otra Rama**
   ```bash
-git checkout [nombre-rama]
-   ```
-  - **Fusionar Ramas**
+  git checkout [nombre-rama]
+  ```
+
+- **Fusionar Ramas**
   ```bash
-git merge [nombre-rama]
-   ```
-  ## Sincronización con Repositorios Remotos
+  git merge [nombre-rama]
+  ```
+
+## Sincronización con Repositorios Remotos
 
 - **Subir Cambios al Repositorio Remoto**
   ```bash
-git push [alias] [rama]
-
+  git push [alias] [rama]
   ```
+
 - **Actualizar el Repositorio Local con Cambios Remotos**
   ```bash
-git pull [alias] [rama]
-
+  git pull [alias] [rama]
   ```
 
-  ## Historial de Commits
+## Historial de Commits
 
-- **Configurar Usuario y Correo Electrónico**
+- **Ver el Historial de Commits**
   ```bash
-git log
-   ```
-  ## Ejemplo de ALIAS
-- **ALIAS :: git tree**
-- **Configurar Usuario y Correo Electrónico**
+  git log
+  ```
+
+## Ejemplo de ALIAS
+
+- **Crear un Alias para 'git tree'**
   ```bash
-git config --global alias.tree "log --graph --decorate --all --oneline"
+  git config --global alias.tree "log --graph --decorate --all --oneline"
+  ```
 
-   ```
+## Configuración del Repositorio
 
-
-## Configuración repositorio
-- **Cambiar**
+- **Cambiar URL del Repositorio Remoto**
   ```bash
-git remote set-url origin git@github.com:[tu_usuario]/[tu_repositorio].git
-   ```
-- **Nuevo**
-  ```bash
-git remote add origin git@github.com:<tu_usuario>/<tu_repositorio>.git
-   ```
+  git remote set-url origin git@github.com:[tu_usuario]/[tu_repositorio].git
+  ```
 
- ## Comandos Adicionales
+- **Añadir un Nuevo Repositorio Remoto**
+  ```bash
+  git remote add origin git@github.com:[tu_usuario]/[tu_repositorio].git
+  ```
+
+## Comandos Adicionales
 
 - **Diferencias entre Archivos**
   ```bash
-git diff   
-```
-
+  git diff
+  ```
 
 - **Reestablecer Archivos del Área de Staging**
   ```bash
-git reset [archivo]
-```
+  git reset [archivo]
+  ```
 
