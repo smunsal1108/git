@@ -87,16 +87,27 @@ git config --global alias.tree "log --graph --decorate --all --oneline"
 
    ```
 
-## Ejemplo configuración repositorio
 
+## Configuración repositorio
+- **Cambiar**
   ```bash
 git remote set-url origin git@github.com:[tu_usuario]/[tu_repositorio].git
-
-
    ```
+- **Nuevo**
   ```bash
-git config --global alias.tree "log --graph --decorate --all --oneline"
-
+git remote add origin git@github.com:<tu_usuario>/<tu_repositorio>.git
    ```
 
+ ## Comandos Adicionales
+
+- **Diferencias entre Archivos**
+  ```bash
+git diff   
+```
+
+
+- **Reestablecer Archivos del Área de Staging**
+  ```bash
+git reset [archivo]
+```
 
