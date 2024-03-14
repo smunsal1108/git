@@ -100,15 +100,36 @@ Este repositorio sirve como una guía rápida y un recordatorio de los comandos 
   git remote add origin git@github.com:[tu_usuario]/[tu_repositorio].git
   ```
 
+## Generar Clave Pública y Privada SSH
+
+Para generar una nueva clave SSH, puedes usar el siguiente comando. Asegúrate de reemplazar "tu_email@example.com" con tu dirección de correo electrónico real. Este comando crea una nueva clave SSH, usando el correo electrónico proporcionado como una etiqueta.
+
+  ```bash
+  ssh-keygen -t rsa -b 4096 -C "tu_email@example.com"
+  ```
+
+Después de ejecutar el comando, te pedirá que especifiques la ubicación del archivo en el que quieres guardar la clave. Puedes presionar enter para aceptar la ubicación predeterminada. Luego, te pedirá una contraseña segura para la clave.
+
 ## Comandos Adicionales
+
+- **Comprobar Conexión con Repositorio Remoto**
+  ```bash
+  ssh -T git@github.com
+  ```
 
 - **Diferencias entre Archivos**
   ```bash
   git diff
   ```
 
+- **Comparar Diferencias entre Distintos Repositorios**
+  Para comparar diferencias entre distintos repositorios, puedes utilizar el comando `git diff [branch1]..[branch2]`. Esto te permitirá ver las diferencias entre dos ramas, incluso si están en repositorios distintos, siempre que ambos estén correctamente referenciados localmente.
+
+  ```bash
+  git diff [branch1]..[branch2]
+  ```
+
 - **Reestablecer Archivos del Área de Staging**
   ```bash
   git reset [archivo]
   ```
-
