@@ -10,20 +10,18 @@ Este repositorio sirve como una guía rápida y un recordatorio de los comandos 
   git config --global user.email "tuemail@example.com"
    ```
 
-
-  ## Crear y Clonar Repositorios
+## Crear y Clonar Repositorios
 
 - **Inicializar un Nuevo Repositorio**
   ```bash
 git init
    ```
-   ```
+
 - **Clonar un Repositorio Existente**
   ```bash
 git clone [URL]
    ```
-
-  ## Cambios en los Archivos
+## Cambios en los Archivos
 
 - **Verificar el Estado del Repositorio**
   ```bash
