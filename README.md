@@ -13,14 +13,15 @@ Este repositorio sirve como una guía rápida y un recordatorio de los comandos 
 ## Crear y Clonar Repositorios
 
 - **Inicializar un Nuevo Repositorio**
-  ```bash
-git init
+   ```bash
+  git init
    ```
 
 - **Clonar un Repositorio Existente**
   ```bash
 git clone [URL]
    ```
+
 ## Cambios en los Archivos
 
 - **Verificar el Estado del Repositorio**
